@@ -10,11 +10,10 @@ import org.apache.commons.lang3.RandomStringUtils;
  */
 public class FileGenerator {
 
-
     private static final String STRINGS = "stringQuantity_";
     private static final String LENGTH = "maxLength_";
 
-    public File generateSourceFile(String path, int stringQuantity, int maxLength) throws IOException {
+    File generateSourceFile(String path, int stringQuantity, int maxLength) throws IOException {
         File file = new File(path + STRINGS + stringQuantity + "_" + LENGTH + maxLength);
         FileWriter fw = new FileWriter(file);
 
